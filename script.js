@@ -672,7 +672,7 @@ function Sentry_onClick(theID) {
       // hide the login box
       SentryPopDown();
       // go to the URL in mainLandingPageURL, even if it just contains the default #
-      top.location = mainLandingPageURL;
+      window.location = mainLandingPageURL;
       break;
     case "signUpLnk":
       // user has clicked the sign up link
@@ -777,9 +777,9 @@ function outputResult() {
         createCookie("Sentry_sendEmTo", Sentry_sendEmTo, duration);
         var e = Sentry_sendEmTo.indexOf("?");
         if (e != -1) {
-          window.location = Sentry_sendEmTo + "&ms=" + new Date().getTime();
+          window.location = Sentry_sendEmTo + "/&ms=" + new Date().getTime();
         } else {
-          window.location = Sentry_sendEmTo + "?ms=" + new Date().getTime();
+          window.location = Sentry_sendEmTo + "/?ms=" + new Date().getTime();
         }
       } else {
         //not being redirected
@@ -1069,9 +1069,9 @@ function SentryPopUp(state) {
         if (Sentry_sendEmTo != "" && isPro != true) {
           var e = Sentry_sendEmTo.indexOf("?");
           if (e != -1) {
-            var url = Sentry_sendEmTo + "&ms=" + new Date().getTime();
+            var url = Sentry_sendEmTo + "/&ms=" + new Date().getTime();
           } else {
-            var url = Sentry_sendEmTo + "?ms=" + new Date().getTime();
+            var url = Sentry_sendEmTo + "/?ms=" + new Date().getTime();
           }
           // assign here
           mainLandingPageURL = url;
