@@ -1,0 +1,694 @@
+.clear {
+  clear: both;
+}
+
+.handCursor {
+  cursor: pointer;
+  cursor: hand;
+}
+
+#forgotSpan {
+  color: White;
+  display: block;
+  float: left;
+  font-family: verdana;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: 0px;
+  text-transform: none;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 6px;
+  line-height: normal;
+  width: 75px;
+  text-align: left;
+}
+
+hr {
+  background-color: White;
+  border: 0;
+  border-top-style: solid;
+  border-top-color: black;
+  height: 1px;
+  margin: 0px;
+  margin-bottom: 0px !important;
+}
+
+#SentryFooterBar {
+  display: block;
+  float: left;
+  height: 48px;
+  width: 300px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+#SentryInputGroup {
+  background-color: Gainsboro;
+  border-color: White;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 1px;
+  height: 79px;
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 260px;
+}
+
+#SentryInputGroup input {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  display: block;
+  float: left;
+  background-color: rgb(237, 237, 241);
+  border: none;
+  color: Gray;
+  font-family: verdana;
+  font-size: 16px;
+  height: 39px;
+  margin-left: 0px;
+  padding-left: 12px;
+  width: 214px;
+  line-height: normal;
+}
+
+#unHideSpan {
+  color: White;
+  display: block;
+  float: left;
+  font-family: verdana;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: 0px;
+  text-transform: none;
+  margin-top: 6px;
+  width: 63px;
+  height: 16px;
+  line-height: normal;
+  text-align: left;
+}
+
+#myProfile {
+  color: White;
+  display: block;
+  float: left;
+  font-family: verdana;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  height: 45px;
+  letter-spacing: 0px;
+  line-height: normal;
+  text-transform: none;
+  cursor: pointer;
+  margin-left: 0px;
+  padding-top: 11px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+#signUpLnk {
+  color: White;
+  display: block;
+  float: left;
+  font-family: verdana;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  height: 45px;
+  letter-spacing: 0px;
+  line-height: normal;
+  text-transform: none;
+  cursor: pointer;
+  padding-top: 11px;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  width: 148px;
+}
+
+#txtLogOut {
+  color: White;
+  display: block;
+  float: left;
+  font-family: verdana;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  height: 45px;
+  letter-spacing: 0px;
+  line-height: normal;
+  text-transform: none;
+  cursor: pointer;
+  margin-left: 0px;
+  padding-top: 11px;
+  width: 148px;
+  display: none;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+#Sentry_email {
+  border-top-right-radius: 6px;
+  height: 37px;
+}
+
+#Sentry_password {
+  border-bottom-right-radius: 6px;
+  height: 37px;
+}
+
+#Sentry_password::after {
+  clear: both;
+}
+
+#iconEmail {
+  float: left;
+  background: url(https://www.sentrylogin.com/sentry/images/icon_@envelopeFlat.png) no-repeat;
+  background-position: center;
+  height: 36px;
+  width: 46px;
+}
+
+#iconPassword {
+  float: left;
+  background: url(https://www.sentrylogin.com/sentry/images/icon_lockClosedFlat.png) no-repeat;
+  background-position: center;
+  height: 36px;
+  width: 46px;
+}
+
+#iconProfile {
+  float: left;
+  background: url(https://www.sentrylogin.com/sentry/images/icon_profileFlat.png) no-repeat;
+  background-position: center;
+  cursor: pointer;
+  height: 37px;
+  margin-left: 10px;
+  width: 40px;
+}
+
+#xout {
+  float: right;
+  background: url(https://www.sentrylogin.com/sentry/images/icon_xoutFlat.png) no-repeat;
+  background-position: center;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin-top: 14px;
+}
+
+#iconShowPassword {
+  float: left;
+  background: url(https://www.sentrylogin.com/sentry/images/icon_lockOpenFlat.png) no-repeat;
+  background-position: center;
+  display: none;
+  height: 36px;
+  width: 46px;
+}
+
+#Stay {
+  color: White;
+  display: block;
+  float: left;
+  font-family: verdana;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: 0px;
+  text-transform: none;
+  cursor: pointer;
+  margin-top: 4px;
+  line-height: normal;
+}
+
+#SentryLoginBox {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  rgba(0, 0, 0, 0.298039) 0px 1px 2px 0px;
+  /* Bottommost shadow */
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto;
+  color: rgb(255, 255, 255);
+  display: block;
+  float: left;
+  height: 290px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 300px;
+  background-color: DarkSeaGreen;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+#SentryFormGroup {
+  height: 195px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+#SentryHelloGroup {
+  display: block;
+  float: left;
+  height: 197px;
+  display: none;
+  width: 300px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+#EnterMember,
+#messages {
+  color: White;
+  display: block;
+  float: left;
+  font-family: verdana;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: normal;
+  text-transform: none;
+  padding-top: 20px;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+#EnterMember {
+  cursor: pointer;
+  background: url(https://www.sentrylogin.com/sentry/images/icon_handshakeFlat.png) no-repeat;
+  background-position: center top;
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 59px;
+  height: 64px;
+  margin-top: 40px;
+  width: 300px;
+}
+
+#messages {
+  background: url(https://www.sentrylogin.com/sentry/images/icon_warning.png) no-repeat;
+  background-position: top center;
+  height: 160px;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+#SentryOutermost {
+  width: 300px;
+  height: 290px;
+}
+
+#Sentry_email:focus,
+#Sentry_password:focus,
+#forgotSpan:focus,
+#unHideSpan:focus,
+#Stay:focus,
+#Sentry_button:focus,
+#msgOkBtn:focus {
+  outline: none;
+}
+
+#SentryTitleBar {
+  height: 48px;
+  padding-top: 12px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  text-align: center;
+}
+
+#Title,
+#Welcome {
+  display: block;
+  float: left;
+  font-family: verdana;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: normal;
+  text-transform: none;
+  text-align: center;
+  width: 240px;
+  margin-left: -30px;
+}
+
+#Welcome {
+  display: none;
+}
+
+#iconKey {
+  display: block;
+  float: left;
+  background: url(https://www.sentrylogin.com/sentry/images/icon_key.png) no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 26px;
+}
+
+#psist {
+  display: block;
+  float: left;
+  margin-left: 45px;
+  margin-top: 7px;
+}
+
+input[type=checkbox].SentryCss-checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+input[type=checkbox].SentryCss-checkbox + label.SentryCss-label {
+  padding-left: 22px;
+  height: 21px;
+  display: inline-block;
+  line-height: 21px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+input[type=checkbox].SentryCss-checkbox:checked + label.SentryCss-label {
+  background-position: 0 -21px;
+}
+
+.SentryCss-label {
+  background-image: url(https://www.sentrylogin.com/sentry/images/checkRoundFlat.png);
+}
+
+.SentryLoginButton {
+  display: block;
+  float: left;
+  height: 40px;
+  width: 260px;
+  background: Gainsboro;
+  color: #848484;
+  font-size: 16px;
+  font-family: verdana;
+  font-weight: normal;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+  cursor: pointer;
+  line-height: normal;
+}
+
+.SentryLoginButton:link {
+  text-decoration: none;
+  color: #848484;
+}
+
+.SentryLoginButton:visited {
+  text-decoration: none;
+  color: #848484;
+}
+
+.SentryLoginButton:hover {
+  border-top-color: #848484;
+  background: #848484;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.SentryLoginButton:active {
+  border-top-color: #4561AE;
+  background: MintCream;
+  text-decoration: none;
+}
+
+#msgOkBtn {
+  margin-left: 0px;
+  margin-top: 36px;
+}
+
+#msgOkBtnText {
+  display: block;
+  margin-top: 8px;
+}
+
+#lgnBtnText {
+  display: table-cell;
+  vertical-align: middle;
+  height: 40px;
+  width: 260px;
+}
+
+#SentryOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1100000 !important;
+  display: none;
+  background-color: rgba(208, 208, 208, 0.8);
+}
+
+.before {
+  display: none;
+}
+
+.after {
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-animation: login .7s ease-in-out;
+  -moz-animation: login .7s ease-in-out;
+  -ms-animation: login .7s ease-in-out;
+  -o-animation: login .7s ease-in-out;
+  animation: login .7s ease-in-out;
+  z-index: 1200000 !important;
+}
+
+
+/* BEGIN PAPER SHADOW EFFECT */
+
+.after::before,
+.after::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 14px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: none;
+  -webkit-box-shadow: 0 15px 10px #333333;
+  -moz-box-shadow: 0 15px 10px #333333;
+  box-shadow: 0 15px 10px #333333;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.after::after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+
+/* END PAPER SHADOW EFFECT */
+
+
+/* CSS Animations */
+
+@keyframes "login" {
+  0% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+  100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes login {
+  0% {
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes "login" {
+  0% {
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes "login" {
+  0% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+  100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes "login" {
+  0% {
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+}
+
+
+/* BEGIN WOBBLER */
+
+#wobbler {
+  display: block;
+  margin: 32px auto;
+  height: 36px;
+  width: 36px;
+  -webkit-animation: rotation .5s infinite linear;
+  -moz-animation: rotation .5s infinite linear;
+  -o-animation: rotation .5s infinite linear;
+  animation: rotation .5s infinite linear;
+  border-left: 2px solid LightGray;
+  border-right: 2px solid LightGray;
+  border-bottom: 4px solid LightGray;
+  border-top: 1px solid LightGray;
+  border-radius: 100%;
+  margin-top: 70px;
+  display: none;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+
+
+/* END WOBBLER */
