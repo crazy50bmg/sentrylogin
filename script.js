@@ -31,21 +31,9 @@
 			}
 		}
 	}
-    
-    function break_iframe(url) { 
-  if ( window.location != window.parent.location ) {
-  	if(url){
-		top.location = url;
-	}
-	else{
-   		top.location = self.location.href;
-   	}
-  }
-}
-	
 	
 	function isMobileDevice() {
-    	return (typeof top.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    	return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 		// returns true if mobile, false otherwise
 	}
 
@@ -351,15 +339,182 @@
 		if(goto){
 			if(goto != ""){
 				// go to url
-				top.location = goto;
-				location.reload();
+				if(isPro != true){
+					// begin handle hash tags if any
+					url = goto, idx = url.indexOf("#");
+					if (idx != -1){
+						// there's a hashtag in the url
+						hashTagPart = url.substring(idx);
+						urlWithoutHashtag = goto.replace(hashTagPart, "");
+						var e = goto.indexOf("?");
+						if(e != -1 ){
+							window.location = urlWithoutHashtag + "&lo=1" + hashTagPart;
+						}
+						else{
+							window.location = urlWithoutHashtag + "?lo=1" + hashTagPart;
+						}
+					}
+					else {
+						// no hashtag
+						window.location = goto;
+					}
+					// end handle hash tags
+				}
+				else{
+					// this login form is on a protected page
+					
+					// begin handle hash tags if any
+					url = goto, idx = url.indexOf("#");
+					if (idx != -1){
+						// there's a hashtag in the url
+						hashTagPart = url.substring(idx);
+						urlWithoutHashtag = goto.replace(hashTagPart, "");
+					}
+					else {
+						// no hashtag
+						urlWithoutHashtag = goto;
+					}
+					// end handle hash tags
+					
+					var e = goto.indexOf("?");
+					if(e != -1 ){
+						window.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
+					}
+					else{
+						window.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
+					}
+				}
 			}
 			else{
-				// goto is required for Wix
+				if(isPro != true){
+					//re-browse to this page
+					// was: window.location.reload();
+					
+					// this gets rid of red msg if logging out
+					var thisPage = window.location.href;
+					// first get rid of it so we don't double it
+					rplc = "&fromProt=1";
+					thisPage = thisPage.replace(rplc, "");
+					rplc = "?fromProt=1";
+					thisPage = thisPage.replace(rplc, "");
+					rplc = "&fromProt=";
+					thisPage = thisPage.replace(rplc, "");
+					rplc = "?fromProt=";
+					thisPage = thisPage.replace(rplc, "");
+					
+					// begin handle hash tags if any
+					url = thisPage, idx = url.indexOf("#");
+					if (idx != -1){
+						// there's a hashtag in the url
+						hashTagPart = url.substring(idx);
+						urlWithoutHashtag = thisPage.replace(hashTagPart, "");
+					}
+					else {
+						// no hashtag
+						urlWithoutHashtag = thisPage;
+					}
+					// end handle hash tags
+					
+					// now put it in
+					var e = thisPage.indexOf("?");
+					if(e != -1 ){
+						window.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
+					}
+					else{
+						window.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
+					}
+				}
+				else{
+					//re-browse to this page with added qs
+					var thisPage = window.location.href;
+					
+					// begin handle hash tags if any
+					url = thisPage, idx = url.indexOf("#");
+					if (idx != -1){
+						// there's a hashtag in the url
+						hashTagPart = url.substring(idx);
+						urlWithoutHashtag = thisPage.replace(hashTagPart, "");
+					}
+					else {
+						// no hashtag
+						urlWithoutHashtag = thisPage;
+					}
+					// end handle hash tags
+					
+					var e = thisPage.indexOf("?");
+					if(e != -1 ){
+						window.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
+					}
+					else{
+						window.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
+					}
+				}			
 			}
 		}
 		else{
-			// goto is required for Wix
+			if(isPro != true){
+				//re-browse to this page
+				// was: window.location.reload();
+				
+				// this gets rid of red msg if logging out
+				var thisPage = window.location.href;
+				// first get rid of it so we don't double it
+				rplc = "&fromProt=1";
+				thisPage = thisPage.replace(rplc, "");
+				rplc = "?fromProt=1";
+				thisPage = thisPage.replace(rplc, "");
+				rplc = "&fromProt=";
+				thisPage = thisPage.replace(rplc, "");
+				rplc = "?fromProt=";
+				thisPage = thisPage.replace(rplc, "");
+				
+				// begin handle hash tags if any
+				url = thisPage, idx = url.indexOf("#");
+				if (idx != -1){
+					// there's a hashtag in the url
+					hashTagPart = url.substring(idx);
+					urlWithoutHashtag = thisPage.replace(hashTagPart, "");
+				}
+				else {
+					// no hashtag
+					urlWithoutHashtag = thisPage;
+				}
+				// end handle hash tags
+				
+				// now put it in
+				var e = thisPage.indexOf("?");
+				if(e != -1 ){
+					window.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
+				}
+				else{
+					window.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
+				}
+			}
+			else{
+				//re-browse to this page with added qs
+				var thisPage = window.location.href;
+				
+				// begin handle hash tags if any
+				url = thisPage, idx = url.indexOf("#");
+				if (idx != -1){
+					// there's a hashtag in the url
+					hashTagPart = url.substring(idx);
+					urlWithoutHashtag = thisPage.replace(hashTagPart, "");
+				}
+				else {
+					// no hashtag
+					urlWithoutHashtag = thisPage;
+				}
+				// end handle hash tags
+				
+				var e = thisPage.indexOf("?");
+				if(e != -1 ){
+					window.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
+				}
+				else{
+					window.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
+				}
+			}			
 		}
 	}
 			
@@ -541,7 +696,7 @@
 					}
 				}
 				//alert("The profile is located at: " + url);
-				window.top.location = url;
+				window.location = url;
 				break;
 			case "xout":
 				// xout was clicked
@@ -552,7 +707,7 @@
 				// Forgot was clicked
 				// using a custom tag attribute so the webmaster has more customizability
 				lnk = document.getElementById("forgotSpan").getAttribute('lnk');
-				top.location = lnk;
+				window.location = lnk;
 				break;
 			case "Sentry_button":
 				// submit the form
@@ -568,7 +723,7 @@
 				// hide the login box
 				SentryPopDown();
 				// go to the URL in mainLandingPageURL, even if it just contains the default #
-				top.location = mainLandingPageURL;
+				window.location = mainLandingPageURL;
 				break;
 			case "signUpLnk":
 				// user has clicked the sign up link
@@ -576,7 +731,7 @@
 				if(showSignUp == "YES"){
 					SentryPopDown();
 					Sentry_ID = document.getElementById("Sentry_ID").value;
-					top.location = "https://www.sentrylogin.com/sentry/member_signup_list.asp?Site_ID=" + Sentry_ID;
+					window.location = "https://www.sentrylogin.com/sentry/member_signup_list.asp?Site_ID=" + Sentry_ID;
 				}
 				break;
 			default:
@@ -679,12 +834,10 @@
 					createCookie("Sentry_sendEmTo", Sentry_sendEmTo, duration);
 					var e = Sentry_sendEmTo.indexOf("?");
 					if(e == -1 ){
-						theLoc = Sentry_sendEmTo + "/&ms=" + new Date().getTime();
-                        break_iframe(theLoc);
+						window.location = Sentry_sendEmTo + "&ms=" + new Date().getTime();
 					}
 					else{
-						theLoc = Sentry_sendEmTo + "?ms=" + new Date().getTime();
-                        break_iframe(theLoc);
+						window.location = Sentry_sendEmTo + "?ms=" + new Date().getTime();
 					}
 				}
 				else{
@@ -993,7 +1146,7 @@
 					if(Sentry_sendEmTo != "" && isPro != true){
 						var e = Sentry_sendEmTo.indexOf("?");
 						if(e == -1 ){
-							var url = Sentry_sendEmTo + "/&ms=" + new Date().getTime();
+							var url = Sentry_sendEmTo + "&ms=" + new Date().getTime();
 						}
 						else{
 							var url = Sentry_sendEmTo + "?ms=" + new Date().getTime();
