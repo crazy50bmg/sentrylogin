@@ -470,6 +470,7 @@ function LogOut(goto) {
         // there's a hashtag in the url
         hashTagPart = url.substring(idx);
         urlWithoutHashtag = thisPage.replace(hashTagPart, "");
+        window.alert(urlWithoutHashtag)
       } else {
         // no hashtag
         urlWithoutHashtag = thisPage;
