@@ -846,11 +846,11 @@
 					createCookie("Sentry_sendEmTo", Sentry_sendEmTo, duration);
 					var e = Sentry_sendEmTo.indexOf("?");
 					if(e != -1 ){
-						theLoc = Sentry_sendEmTo + "&ms=" + new Date().getTime();
+						theLoc = Sentry_sendEmTo + "/&ms=" + new Date().getTime();
                         break_iframe(theLoc);
 					}
 					else{
-						theLoc = Sentry_sendEmTo + "?ms=" + new Date().getTime();
+						theLoc = Sentry_sendEmTo + "/?ms=" + new Date().getTime();
                         break_iframe(theLoc);
 					}
 				}
@@ -1160,10 +1160,10 @@
 					if(Sentry_sendEmTo != "" && isPro != true){
 						var e = Sentry_sendEmTo.indexOf("?");
 						if(e != -1 ){
-							var url = Sentry_sendEmTo + "&ms=" + new Date().getTime();
+							var url = Sentry_sendEmTo + "/&ms=" + new Date().getTime();
 						}
 						else{
-							var url = Sentry_sendEmTo + "?ms=" + new Date().getTime();
+							var url = Sentry_sendEmTo + "/?ms=" + new Date().getTime();
 						}
 						// assign here
 						mainLandingPageURL = url;
