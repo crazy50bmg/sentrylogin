@@ -255,7 +255,7 @@ function doIP() {
 }
 
 function querySt(lookFor) {
-  var wholeQS = window.location.search.substring(1);
+  var wholeQS = top.location.search.substring(1);
   var nvPairs = wholeQS.split("&");
   var r;
   for (i = 0; i < nvPairs.length; i++) {
@@ -332,14 +332,14 @@ function LogOut(goto) {
           hashTagPart = url.substring(idx);
           urlWithoutHashtag = goto.replace(hashTagPart, "");
           var e = goto.indexOf("?");
-          if (e != -1) {
-            window.location = urlWithoutHashtag + "&lo=1" + hashTagPart;
+          if (e == -1) {
+            top.location = urlWithoutHashtag + "/&lo=1" + hashTagPart;
           } else {
-            window.location = urlWithoutHashtag + "?lo=1" + hashTagPart;
+            top.location = urlWithoutHashtag + "?lo=1" + hashTagPart;
           }
         } else {
           // no hashtag
-          window.location = goto;
+          top.location = goto;
         }
         // end handle hash tags
       } else {
@@ -358,10 +358,10 @@ function LogOut(goto) {
         // end handle hash tags
 
         var e = goto.indexOf("?");
-        if (e != -1) {
-          window.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
+        if (e == -1) {
+          top.location = urlWithoutHashtag + "/&fromProt=1" + hashTagPart;
         } else {
-          window.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
+          top.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
         }
       }
     } else {
@@ -370,7 +370,7 @@ function LogOut(goto) {
         // was: window.location.reload();
 
         // this gets rid of red msg if logging out
-        var thisPage = window.location.href;
+        var thisPage = top.location.href;
         // first get rid of it so we don't double it
         rplc = "&fromProt=1";
         thisPage = thisPage.replace(rplc, "");
@@ -395,14 +395,14 @@ function LogOut(goto) {
 
         // now put it in
         var e = thisPage.indexOf("?");
-        if (e != -1) {
-          window.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
+        if (e == -1) {
+          top.location = urlWithoutHashtag + "/&fromProt=1" + hashTagPart;
         } else {
-          window.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
+          top.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
         }
       } else {
         //re-browse to this page with added qs
-        var thisPage = window.location.href;
+        var thisPage = top.location.href;
 
         // begin handle hash tags if any
         url = thisPage, idx = url.indexOf("#");
@@ -417,10 +417,10 @@ function LogOut(goto) {
         // end handle hash tags
 
         var e = thisPage.indexOf("?");
-        if (e != -1) {
-          window.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
+        if (e == -1) {
+          top.location = urlWithoutHashtag + "/&fromProt=1" + hashTagPart;
         } else {
-          window.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
+          top.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
         }
       }
     }
@@ -430,7 +430,7 @@ function LogOut(goto) {
       // was: window.location.reload();
 
       // this gets rid of red msg if logging out
-      var thisPage = window.location.href;
+      var thisPage = top.location.href;
       // first get rid of it so we don't double it
       rplc = "&fromProt=1";
       thisPage = thisPage.replace(rplc, "");
@@ -455,14 +455,14 @@ function LogOut(goto) {
 
       // now put it in
       var e = thisPage.indexOf("?");
-      if (e != -1) {
-        window.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
+      if (e == -1) {
+        top.location = urlWithoutHashtag + "/&fromProt=1" + hashTagPart;
       } else {
-        window.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
+        top.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
       }
     } else {
       //re-browse to this page with added qs
-      var thisPage = window.location.href;
+      var thisPage = top.location.href;
 
       // begin handle hash tags if any
       url = thisPage, idx = url.indexOf("#");
@@ -477,10 +477,10 @@ function LogOut(goto) {
       // end handle hash tags
 
       var e = thisPage.indexOf("?");
-      if (e != -1) {
-        window.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
+      if (e == -1) {
+        top.location = urlWithoutHashtag + "/&fromProt=1" + hashTagPart;
       } else {
-        window.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
+        top.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
       }
     }
   }
@@ -655,7 +655,7 @@ function Sentry_onClick(theID) {
         }
       }
       //alert("The profile is located at: " + url);
-      window.location = url;
+      top.location = url;
       break;
     case "xout":
       // xout was clicked
@@ -666,7 +666,7 @@ function Sentry_onClick(theID) {
       // Forgot was clicked
       // using a custom tag attribute so the webmaster has more customizability
       lnk = document.getElementById("forgotSpan").getAttribute('lnk');
-      window.location = lnk;
+      top.location = lnk;
       break;
     case "Sentry_button":
       // submit the form
@@ -682,7 +682,7 @@ function Sentry_onClick(theID) {
       // hide the login box
       SentryPopDown();
       // go to the URL in mainLandingPageURL, even if it just contains the default #
-      window.location = mainLandingPageURL;
+      top.location = mainLandingPageURL;
       break;
     case "signUpLnk":
       // user has clicked the sign up link
@@ -690,7 +690,7 @@ function Sentry_onClick(theID) {
       if (showSignUp == "YES") {
         SentryPopDown();
         Sentry_ID = document.getElementById("Sentry_ID").value;
-        window.location = "https://www.sentrylogin.com/sentry/member_signup_list.asp?Site_ID=" + Sentry_ID;
+        top.location = "https://www.sentrylogin.com/sentry/member_signup_list.asp?Site_ID=" + Sentry_ID;
       }
       break;
     default:
@@ -787,7 +787,7 @@ function outputResult() {
         createCookie("Sentry_sendEmTo", Sentry_sendEmTo, duration);
         var e = Sentry_sendEmTo.indexOf("?");
         if (e == -1) {
-          theLoc = Sentry_sendEmTo + "&ms=" + new Date().getTime();
+          theLoc = Sentry_sendEmTo + "/&ms=" + new Date().getTime();
           break_iframe(theLoc);
         } else {
           theLoc = Sentry_sendEmTo + "?ms=" + new Date().getTime();
@@ -1081,7 +1081,7 @@ function SentryPopUp(state) {
         if (Sentry_sendEmTo != "" && isPro != true) {
           var e = Sentry_sendEmTo.indexOf("?");
           if (e == -1) {
-            var url = Sentry_sendEmTo + "&ms=" + new Date().getTime();
+            var url = Sentry_sendEmTo + "/&ms=" + new Date().getTime();
           } else {
             var url = Sentry_sendEmTo + "?ms=" + new Date().getTime();
           }
