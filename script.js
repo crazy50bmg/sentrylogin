@@ -255,7 +255,7 @@ function doIP() {
 }
 
 function querySt(lookFor) {
-  var wholeQS = top.location.search.substring(1);
+  var wholeQS = window.location.search.substring(1);
   var nvPairs = wholeQS.split("&");
   var r;
   for (i = 0; i < nvPairs.length; i++) {
