@@ -304,7 +304,7 @@ function getCookie(cookie_name) {
   }
 }
 
-function LogOut(goto) {
+function LogOut() {
   eraseCookie('Sentry_loginTkn');
   eraseCookie('Sentry_memberPpl_ID');
   eraseCookie('Sentry_member_ID');
@@ -316,13 +316,8 @@ function LogOut(goto) {
 
   eraseCookie('Sentry%5FloginTkn'); // for ASP and PHP interconnectivity
   eraseCookie('Sentry_lng');
-
-  var urlWithoutHashtag = "";
-  var hashTagPart = "";
-  var url = "";
-
-  top.location = goto;
-	location.reload();
+  
+	top.location.reload();
 }
 
 function wipeOrNot(theID) {
