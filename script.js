@@ -304,7 +304,7 @@ function getCookie(cookie_name) {
   }
 }
 
-function LogOut() {
+function LogOut(goto) {
   eraseCookie('Sentry_loginTkn');
   eraseCookie('Sentry_memberPpl_ID');
   eraseCookie('Sentry_member_ID');
@@ -316,8 +316,18 @@ function LogOut() {
 
   eraseCookie('Sentry%5FloginTkn'); // for ASP and PHP interconnectivity
   eraseCookie('Sentry_lng');
-  
-	top.location.reload();
+
+  if (goto) {
+    if (goto != "") {
+      // go to url
+      top.location = goto;
+      location.reload();
+    } else {
+      // goto is required for Wix
+    }
+  } else {
+    // goto is required for Wix
+  }
 }
 
 function wipeOrNot(theID) {
