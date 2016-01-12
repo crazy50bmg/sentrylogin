@@ -45,7 +45,7 @@
 	
 	
 	function isMobileDevice() {
-    	return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    	return (typeof top.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 		// returns true if mobile, false otherwise
 	}
 
@@ -719,7 +719,7 @@
 				// Forgot was clicked
 				// using a custom tag attribute so the webmaster has more customizability
 				lnk = document.getElementById("forgotSpan").getAttribute('lnk');
-				window.location = lnk;
+				top.location = lnk;
 				break;
 			case "Sentry_button":
 				// submit the form
@@ -735,7 +735,7 @@
 				// hide the login box
 				SentryPopDown();
 				// go to the URL in mainLandingPageURL, even if it just contains the default #
-				window.location = mainLandingPageURL;
+				top.location = mainLandingPageURL;
 				break;
 			case "signUpLnk":
 				// user has clicked the sign up link
@@ -743,7 +743,7 @@
 				if(showSignUp == "YES"){
 					SentryPopDown();
 					Sentry_ID = document.getElementById("Sentry_ID").value;
-					window.location = "https://www.sentrylogin.com/sentry/member_signup_list.asp?Site_ID=" + Sentry_ID;
+					top.location = "https://www.sentrylogin.com/sentry/member_signup_list.asp?Site_ID=" + Sentry_ID;
 				}
 				break;
 			default:
@@ -846,10 +846,12 @@
 					createCookie("Sentry_sendEmTo", Sentry_sendEmTo, duration);
 					var e = Sentry_sendEmTo.indexOf("?");
 					if(e != -1 ){
-						window.location = Sentry_sendEmTo + "&ms=" + new Date().getTime();
+						theLoc = Sentry_sendEmTo + "&ms=" + new Date().getTime();
+                        break_iframe(theLoc);
 					}
 					else{
-						window.location = Sentry_sendEmTo + "?ms=" + new Date().getTime();
+						theLoc = Sentry_sendEmTo + "?ms=" + new Date().getTime();
+                        break_iframe(theLoc);
 					}
 				}
 				else{
