@@ -351,182 +351,15 @@
 		if(goto){
 			if(goto != ""){
 				// go to url
-				if(isPro != true){
-					// begin handle hash tags if any
-					url = goto, idx = url.indexOf("#");
-					if (idx != -1){
-						// there's a hashtag in the url
-						hashTagPart = url.substring(idx);
-						urlWithoutHashtag = goto.replace(hashTagPart, "");
-						var e = goto.indexOf("?");
-						if(e != -1 ){
-							top.location = urlWithoutHashtag + "&lo=1" + hashTagPart;
-						}
-						else{
-							top.location = urlWithoutHashtag + "?lo=1" + hashTagPart;
-						}
-					}
-					else {
-						// no hashtag
-						top.location = goto;
-					}
-					// end handle hash tags
-				}
-				else{
-					// this login form is on a protected page
-					
-					// begin handle hash tags if any
-					url = goto, idx = url.indexOf("#");
-					if (idx != -1){
-						// there's a hashtag in the url
-						hashTagPart = url.substring(idx);
-						urlWithoutHashtag = goto.replace(hashTagPart, "");
-					}
-					else {
-						// no hashtag
-						urlWithoutHashtag = goto;
-					}
-					// end handle hash tags
-					
-					var e = goto.indexOf("?");
-					if(e != -1 ){
-						top.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
-					}
-					else{
-						top.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
-					}
-				}
+				top.location = goto;
+				location.reload();
 			}
 			else{
-				if(isPro != true){
-					//re-browse to this page
-					// was: window.location.reload();
-					
-					// this gets rid of red msg if logging out
-					var thisPage = top.location.href;
-					// first get rid of it so we don't double it
-					rplc = "&fromProt=1";
-					thisPage = thisPage.replace(rplc, "");
-					rplc = "?fromProt=1";
-					thisPage = thisPage.replace(rplc, "");
-					rplc = "&fromProt=";
-					thisPage = thisPage.replace(rplc, "");
-					rplc = "?fromProt=";
-					thisPage = thisPage.replace(rplc, "");
-					
-					// begin handle hash tags if any
-					url = thisPage, idx = url.indexOf("#");
-					if (idx != -1){
-						// there's a hashtag in the url
-						hashTagPart = url.substring(idx);
-						urlWithoutHashtag = thisPage.replace(hashTagPart, "");
-					}
-					else {
-						// no hashtag
-						urlWithoutHashtag = thisPage;
-					}
-					// end handle hash tags
-					
-					// now put it in
-					var e = thisPage.indexOf("?");
-					if(e != -1 ){
-						top.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
-					}
-					else{
-						top.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
-					}
-				}
-				else{
-					//re-browse to this page with added qs
-					var thisPage = top.location.href;
-					
-					// begin handle hash tags if any
-					url = thisPage, idx = url.indexOf("#");
-					if (idx != -1){
-						// there's a hashtag in the url
-						hashTagPart = url.substring(idx);
-						urlWithoutHashtag = thisPage.replace(hashTagPart, "");
-					}
-					else {
-						// no hashtag
-						urlWithoutHashtag = thisPage;
-					}
-					// end handle hash tags
-					
-					var e = thisPage.indexOf("?");
-					if(e != -1 ){
-						top.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
-					}
-					else{
-						top.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
-					}
-				}			
+				// goto is required for Wix
 			}
 		}
 		else{
-			if(isPro != true){
-				//re-browse to this page
-				// was: window.location.reload();
-				
-				// this gets rid of red msg if logging out
-				var thisPage = top.location.href;
-				// first get rid of it so we don't double it
-				rplc = "&fromProt=1";
-				thisPage = thisPage.replace(rplc, "");
-				rplc = "?fromProt=1";
-				thisPage = thisPage.replace(rplc, "");
-				rplc = "&fromProt=";
-				thisPage = thisPage.replace(rplc, "");
-				rplc = "?fromProt=";
-				thisPage = thisPage.replace(rplc, "");
-				
-				// begin handle hash tags if any
-				url = thisPage, idx = url.indexOf("#");
-				if (idx != -1){
-					// there's a hashtag in the url
-					hashTagPart = url.substring(idx);
-					urlWithoutHashtag = thisPage.replace(hashTagPart, "");
-				}
-				else {
-					// no hashtag
-					urlWithoutHashtag = thisPage;
-				}
-				// end handle hash tags
-				
-				// now put it in
-				var e = thisPage.indexOf("?");
-				if(e != -1 ){
-					top.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
-				}
-				else{
-					top.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
-				}
-			}
-			else{
-				//re-browse to this page with added qs
-				var thisPage = top.location.href;
-				
-				// begin handle hash tags if any
-				url = thisPage, idx = url.indexOf("#");
-				if (idx != -1){
-					// there's a hashtag in the url
-					hashTagPart = url.substring(idx);
-					urlWithoutHashtag = thisPage.replace(hashTagPart, "");
-				}
-				else {
-					// no hashtag
-					urlWithoutHashtag = thisPage;
-				}
-				// end handle hash tags
-				
-				var e = thisPage.indexOf("?");
-				if(e != -1 ){
-					top.location = urlWithoutHashtag + "&fromProt=1" + hashTagPart;
-				}
-				else{
-					top.location = urlWithoutHashtag + "?fromProt=1" + hashTagPart;
-				}
-			}			
+			// goto is required for Wix
 		}
 	}
 			
@@ -850,7 +683,7 @@
                         break_iframe(theLoc);
 					}
 					else{
-						theLoc = Sentry_sendEmTo + "/?ms=" + new Date().getTime();
+						theLoc = Sentry_sendEmTo + "?ms=" + new Date().getTime();
                         break_iframe(theLoc);
 					}
 				}
@@ -1163,7 +996,7 @@
 							var url = Sentry_sendEmTo + "/&ms=" + new Date().getTime();
 						}
 						else{
-							var url = Sentry_sendEmTo + "/?ms=" + new Date().getTime();
+							var url = Sentry_sendEmTo + "?ms=" + new Date().getTime();
 						}
 						// assign here
 						mainLandingPageURL = url;
