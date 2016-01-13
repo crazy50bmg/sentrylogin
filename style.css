@@ -599,7 +599,7 @@ input[type=checkbox].SentryCss-checkbox:checked + label.SentryCss-label {
 	z-index: 1200000 !important;
 }
 
-/* BEGIN PAPER SHADOW EFFECT */
+/* BEGIN PAPER SHADOW EFFECT
 .after::before, .after::after {
 	z-index: -1;
 	position: absolute;
@@ -628,7 +628,7 @@ input[type=checkbox].SentryCss-checkbox:checked + label.SentryCss-label {
   right: 10px;
   left: auto;
 }
-/* END PAPER SHADOW EFFECT */
+ END PAPER SHADOW EFFECT */
 
 
 /* CSS Animations */
