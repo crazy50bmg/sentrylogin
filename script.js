@@ -515,9 +515,12 @@ function Sentry_onClick(theID) {
       // submit the form
       
       var frame = window.frameElement;  // Get the <iframe> element of the window
-
+window.alert("Here we go...");
 if (frame) {   // If the window is in an <iframe>, change its source
     window.alert(frame.name);
+} else {
+  window.alert("Nope");
+  
 }
   
       
