@@ -47,7 +47,13 @@ function isMobileDevice() {
 }
 
 function initializeSentry() {
-  window.alert(this.frameElement.attributes.id);
+  var iframes=parent.document.getElementsByTagName('iframe'), ifr, i=0, id=null;
+  while(ifr=iframes[i++]){
+  if(ifr.contentWindow==this){id=ifr.id;break}
+  }
+    window.alert(id);
+  }
+  
   //initialize Sentry Login aspects
 
   goMobile = isMobileDevice();
