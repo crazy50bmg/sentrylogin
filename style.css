@@ -1,565 +1,626 @@
-.clear {
-  clear: both;
+.clear{
+clear:both;
 }
 
 .handCursor {
-  cursor: pointer;
-  cursor: hand;
+	cursor:pointer;
+	cursor:hand;
 }
 
 #forgotSpan {
-  color: White;
-  display: block;
-  float: left;
-  font-family: verdana;
-  font-size: 13px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  letter-spacing: 0px;
-  text-transform: none;
-  cursor: pointer;
-  margin-left: 20px;
-  margin-top: 6px;
-  line-height: normal;
-  width: 75px;
-  text-align: left;
+	color: White;
+	display: block;
+	float: left;
+	font-family: Tahoma, Geneva, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	letter-spacing: 0px;
+	/* text-shadow:0 -1px 0 #000000; */
+	text-transform: none;
+	cursor: pointer;
+	margin-left: 70px;
+	margin-top: 5px;
+	line-height: normal;
+	width: 95px;
+	text-align: left;
 }
-
 hr {
-  background-color: White;
-  border: 0;
-  border-top-style: solid;
-  border-top-color: black;
-  height: 1px;
-  margin: 0px;
-  margin-bottom: 0px !important;
+	background-color: White;
+	border: 0;
+	border-top-style: solid;
+	/* border-top-width: 1px;  */
+	border-top-color: black;
+	height: 1px;
+	margin: 0px;
+	margin-bottom: 0px !important;
 }
-
 #SentryFooterBar {
-  display: block;
-  float: left;
-  height: 48px;
-  width: 300px;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
+	display: block;
+	float: left;
+	height: 48px;
+	width: 420px;
+	/* border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #808080; */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 #SentryInputGroup {
-  background-color: Gainsboro;
-  border-color: White;
-  border-radius: 7px;
-  border-style: solid;
-  border-width: 1px;
-  height: 79px;
-  margin: 0px auto;
-  margin-top: 20px;
-  width: 260px;
+	background-color: Gainsboro;
+	border-color: White;
+	border-radius: 7px;
+	border-style: solid;
+	border-width: 1px;
+	/* box-shadow: 0px 3px 10px 2px #666666 inset;
+	 h-shadow v-shadow blur spread color */	
+	height: 79px;
+	margin: 0px auto;
+	margin-top: 20px;
+	width: 280px;
 }
-
 #SentryInputGroup input {
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-  display: block;
-  float: left;
-  background-color: rgb(237, 237, 241);
-  border: none;
-  color: Gray;
-  font-family: verdana;
-  font-size: 16px;
-  height: 39px;
-  margin-left: 0px;
-  padding-left: 12px;
-  width: 214px;
-  line-height: normal;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	
+	display: block;
+	float: left;
+	background-color: rgb(237, 237, 241);
+	border: none;
+	color: Gray;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 16px;
+	height: 39px;
+	margin-left: 0px;
+	padding-left: 12px;
+	width: 234px;
+	line-height: normal;
 }
-
 #unHideSpan {
-  color: White;
-  display: block;
-  float: left;
-  font-family: verdana;
-  font-size: 13px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  letter-spacing: 0px;
-  text-transform: none;
-  margin-top: 6px;
-  width: 63px;
-  height: 16px;
-  line-height: normal;
-  text-align: left;
+	color: White;
+	display: block;
+	float: left;
+	font-family: Tahoma, Geneva, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	letter-spacing: 0px;
+	/* text-shadow:0 -1px 0 #000000;  */
+	text-transform: none;
+	margin-top: 5px;
+	width: 77px;
+	height: 16px;
+	line-height: normal;
+	text-align: left;
 }
-
 #myProfile {
-  color: White;
-  display: block;
-  float: left;
-  font-family: verdana;
-  font-size: 13px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  height: 45px;
-  letter-spacing: 0px;
-  line-height: normal;
-  text-transform: none;
-  cursor: pointer;
-  margin-left: 0px;
-  padding-top: 11px;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
+	color: White;
+	display: block;
+	float: left;
+	font-family: Tahoma, Geneva, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 45px;
+	letter-spacing: 0px;
+	line-height: normal;
+	/* text-shadow:0 -1px 0 #000000;  */
+	text-transform: none;
+	cursor: pointer;
+	margin-left: 0px;
+	padding-top: 12px;
+	/* padding-right: 30px;
+	 border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: black; */
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
-
 #signUpLnk {
-  color: White;
-  display: block;
-  float: left;
-  font-family: verdana;
-  font-size: 13px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  height: 45px;
-  letter-spacing: 0px;
-  line-height: normal;
-  text-transform: none;
-  cursor: pointer;
-  padding-top: 11px;
-  text-align: right;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-  width: 148px;
+	color: White;
+	display: block;
+	float: left;
+	font-family: Tahoma, Geneva, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 45px;
+	letter-spacing: 0px;
+	line-height: normal;
+	/* text-shadow:0 -1px 0 #000000;  */
+	text-transform: none;
+	cursor: pointer;
+	padding-top: 12px;
+	/* border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: black;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #616161; */
+	text-align:center;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	width: 230px;
 }
-
 #txtLogOut {
-  color: White;
-  display: block;
-  float: left;
-  font-family: verdana;
-  font-size: 13px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  height: 45px;
-  letter-spacing: 0px;
-  line-height: normal;
-  text-transform: none;
-  cursor: pointer;
-  margin-left: 0px;
-  padding-top: 11px;
-  width: 148px;
-  display: none;
-  text-align: right;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
+	color: White;
+	display: block;
+	float: left;
+	font-family: Tahoma, Geneva, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 45px;
+	letter-spacing: 0px;
+	line-height: normal;
+	text-transform: none;
+	cursor: pointer;
+	margin-left: 0px;
+	padding-top: 12px;
+	width: 200px; 
+	display: none;
+	text-align:center;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */	
 }
-
 #Sentry_email {
-  border-top-right-radius: 6px;
-  height: 37px;
+	border-top-right-radius: 6px;
+	height: 37px;
 }
-
 #Sentry_password {
-  border-bottom-right-radius: 6px;
-  height: 37px;
+	border-bottom-right-radius: 6px;
+	height: 37px;
 }
-
 #Sentry_password::after {
-  clear: both;
+	clear:both;
 }
 
 #iconEmail {
-  float: left;
-  background: url(https://www.sentrylogin.com/sentry/images/icon_@envelopeFlat.png) no-repeat;
-  background-position: center;
-  height: 36px;
-  width: 46px;
+	float: left;
+	background: url(https://www.sentrylogin.com/sentry/images/icon_@envelopeFlat.png) no-repeat;
+	background-position:center;
+	height: 36px;
+	width: 46px;
 }
-
 #iconPassword {
-  float: left;
-  background: url(https://www.sentrylogin.com/sentry/images/icon_lockClosedFlat.png) no-repeat;
-  background-position: center;
-  height: 36px;
-  width: 46px;
+	float: left;
+	background: url(https://www.sentrylogin.com/sentry/images/icon_lockClosedFlat.png) no-repeat;
+	background-position:center;
+	height: 36px;
+	width: 46px;
 }
-
 #iconProfile {
-  float: left;
-  background: url(https://www.sentrylogin.com/sentry/images/icon_profileFlat.png) no-repeat;
-  background-position: center;
-  cursor: pointer;
-  height: 37px;
-  margin-left: 10px;
-  width: 40px;
+	float: left;
+	background: url(https://www.sentrylogin.com/sentry/images/icon_profileFlat.png) no-repeat;
+	background-position:center;
+	cursor: pointer;
+	height: 37px;
+	margin-left: 20px;
+	width: 40px;
 }
-
 #xout {
-  float: right;
-  background: url(https://www.sentrylogin.com/sentry/images/icon_xoutFlat.png) no-repeat;
-  background-position: center;
-  cursor: pointer;
-  height: 30px;
-  width: 30px;
-  margin-top: 14px;
-}
+	float: right;
+	background: url(https://www.sentrylogin.com/sentry/images/icon_xoutFlat.png) no-repeat;
+	background-position: center;
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	margin-top: 14px;
 
+}
 #iconShowPassword {
-  float: left;
-  background: url(https://www.sentrylogin.com/sentry/images/icon_lockOpenFlat.png) no-repeat;
-  background-position: center;
-  display: none;
-  height: 36px;
-  width: 46px;
+	float: left;
+	background: url(https://www.sentrylogin.com/sentry/images/icon_lockOpenFlat.png) no-repeat;
+	background-position:center;
+	display: none;
+	height: 36px;
+	width: 46px;
 }
-
 #Stay {
-  color: White;
-  display: block;
-  float: left;
-  font-family: verdana;
-  font-size: 13px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  letter-spacing: 0px;
-  text-transform: none;
-  cursor: pointer;
-  margin-top: 4px;
-  line-height: normal;
+	color: White;
+	display: block;
+	float: left;
+	font-family: Tahoma, Geneva, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	letter-spacing: 0px;
+	/* text-shadow:0 -1px 0 #000000;  */
+	text-transform: none;
+	cursor: pointer;
+	margin-top: 4px;
+	line-height: normal;
 }
 
 #SentryLoginBox {
-  -webkit-background-clip: border-box;
-  -webkit-background-origin: padding-box;
-  -webkit-background-size: auto;
-  rgba(0, 0, 0, 0.298039) 0px 1px 2px 0px;
-  /* Bottommost shadow */
-  background-attachment: scroll;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-size: auto;
-  color: rgb(255, 255, 255);
-  display: block;
-  float: left;
-  height: 290px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  width: 300px;
-  background-color: DarkSeaGreen;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-}
+	-webkit-background-clip: border-box;
+	-webkit-background-origin: padding-box;
+	-webkit-background-size: auto;
+	/* was:  -webkit-box-shadow: rgb(231, 88, 76) 0px 1px 0px 0px inset, rgb(216, 51, 32) 1px 0px 0px 0px inset, rgb(216, 51, 32) -1px 0px 0px 0px inset, rgb(216, 51, 32) 0px -1px 0px 0px inset, rgba(255, 255, 255, 0.298039) 0px 2px 0px 0px inset, rgba(255, 255, 255, 0.298039) 0px 0px 4px 0px inset, rgba(0, 0, 0, 0.298039) 0px 1px 2px 0px;
+	*/
+	/* -webkit-box-shadow: 
+		/* rgb(102, 102, 102) 0px 1px 0px 0px inset,  /* Topmost bar */
+		/* rgb(51, 51, 51) 2px 0px 0px 0px inset,   /* Leftmost bar */
+		/* rgb(51, 51, 51) -2px 0px 0px 0px inset, /* Rightmost bar */
+		/* rgb(51, 51, 51) 0px -2px 0px 0px inset, /* Bottommost bar */
+		/* rgba(189, 189, 189, 1) 0px 2px 0px 0px inset, /* Top Hilite bar */
+		/* rgba(255, 255, 255, 0.298039) 0px 0px 2px 0px inset, /* All around inner glow */
+		rgba(0, 0, 0, 0.298039) 0px 1px 2px 0px; /* Bottommost shadow */
+	background-attachment: scroll;
+	background-clip: border-box;
+	/* background-image: linear-gradient(rgba(231, 88, 76, 0.8), rgba(196, 59, 51, 0.8));
+	*/
+	background-origin: padding-box;
+	background-size: auto;
+	/* border-bottom-color: rgb(255, 255, 255);
+	border-bottom-left-radius: 7px; */
+	/* border-bottom-right-radius: 7px; */
+	/* border-bottom-style: none;
+	border-bottom-width: 0px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgb(255, 255, 255);
+	border-left-style: none;
+	border-left-width: 0px;
+	border-right-color: rgb(255, 255, 255);
+	border-right-style: none;
+	border-right-width: 0px;
+	border-top-color: rgb(255, 255, 255); */
+	/* border-top-left-radius: 7px; */
+	/* border-top-right-radius: 7px; */
+	/* border-top-style: none; 
+	border-top-width: 0px;*/
+	/* was: box-shadow: rgb(231, 88, 76) 0px 1px 0px 0px inset, rgb(216, 51, 32) 1px 0px 0px 0px inset, rgb(216, 51, 32) -1px 0px 0px 0px inset, rgb(216, 51, 32) 0px -1px 0px 0px inset, rgba(255, 255, 255, 0.298039) 0px 2px 0px 0px inset, rgba(255, 255, 255, 0.298039) 0px 0px 4px 0px inset, rgba(0, 0, 0, 0.298039) 0px 1px 2px 0px;
+	*/
+	color: rgb(255, 255, 255);
+	/* cursor: pointer; */
+	display: block;
+	float: left;
+	height: 290px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	/* padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;  */
+	width: 420px;
+		
+	/* background: rgb(129,129,129);  Old browsers */
+	/* background: -moz-linear-gradient(top,  rgba(129,129,129,.75) 0%, rgba(54,54,53,.75) 100%); /* FF3.6+ */
+	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(129,129,129,.75)), color-stop(100%,rgba(54,54,53,.75))); /* Chrome,Safari4+ */
+	/* background: -webkit-linear-gradient(top,  rgba(129,129,129,.75) 0%,rgba(54,54,53,.75) 100%); /* Chrome10+,Safari5.1+ */
+	/* background: -o-linear-gradient(top,  rgba(129,129,129,.75) 0%,rgba(54,54,53,.75) 100%); /* Opera 11.10+ */
+	/* background: -ms-linear-gradient(top,  rgba(129,129,129,.75) 0%,rgba(54,54,53,.75) 100%); /* IE10+ */
+	/* background: linear-gradient(to bottom,  rgba(129,129,129,.75) 0%,rgba(54,54,53,.75) 100%); /* W3C */
+	/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#818181', endColorstr='#363635',GradientType=0 ); /* IE6-9 */
+	
+	 background-color: DarkSeaGreen;
+	/*
+	 testing crunch 
+	background: url(https://www.sentrylogin.com/sentry/images/crunchedPaperBG.png) no-repeat;
+	background-position:center; */
 
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	
+}
 #SentryFormGroup {
-  height: 195px;
-  float: left;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
+	height: 195px;
+	float: left;
+	/* border-top-style: solid; 
+	border-top-width: 1px;
+	border-top-color: #999999;
+	/* border-bottom-style: solid; 
+	border-bottom-width: 1px;
+	border-bottom-color: black;*/
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
-
 #SentryHelloGroup {
-  display: block;
-  float: left;
-  height: 197px;
-  display: none;
-  width: 300px;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
+	display: block;
+	float: left;
+	height: 197px;
+	/* border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: gray;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: black; */
+	display: none;
+	width: 420px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
-
-#EnterMember,
-#messages {
-  color: White;
-  display: block;
-  float: left;
-  font-family: verdana;
-  font-size: 16px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  letter-spacing: 0px;
-  line-height: normal;
-  text-transform: none;
-  padding-top: 20px;
-  text-align: left;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
+#EnterMember, #messages {
+	color: White;
+	display: block;
+	float: left;
+	font-family: Tahoma, Geneva, Arial, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	letter-spacing: 0px;
+	line-height: normal;
+	/* text-shadow:0 -1px 0 #000000;  */
+	text-transform: none;
+	padding-top: 20px;
+	text-align: left;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
-
 #EnterMember {
-  cursor: pointer;
-  background: url(https://www.sentrylogin.com/sentry/images/icon_handshakeFlat.png) no-repeat;
-  background-position: center top;
-  text-align: center;
-  padding-left: 0px;
-  padding-top: 59px;
-  height: 64px;
-  margin-top: 40px;
-  width: 300px;
+	cursor: pointer;
+	background: url(https://www.sentrylogin.com/sentry/images/icon_handshakeFlat.png) no-repeat;
+	background-position: center top;
+	text-align: center;
+	padding-left: 0px;
+	padding-top: 59px;	
+	height: 64px;
+	margin-top: 40px;
+	width: 420px;
 }
-
 #messages {
-  background: url(https://www.sentrylogin.com/sentry/images/icon_warning.png) no-repeat;
-  background-position: top center;
-  height: 160px;
-  margin-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+	background: url(https://www.sentrylogin.com/sentry/images/icon_warning.png) no-repeat;
+	background-position: top center;
+	height: 160px;
+	margin-top: 30px;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 
 #SentryOutermost {
-  width: 300px;
-  height: 290px;
+	/* border-radius: 5px; */
+	/* -moz-box-shadow: 2px 2px 17px 2px #333333; 
+	-webkit-box-shadow: 2px 2px 17px 2px #333333; 
+	box-shadow: 2px 2px 17px 2px #333333;  
+	
+	-moz-box-shadow: 0 0 23px #333333;
+	-webkit-box-shadow: 0 0 23px #333333;
+	box-shadow: 0 0 23px #333333;*/
+	
+	width: 420px;
+	height: 290px;
 }
 
-#Sentry_email:focus,
-#Sentry_password:focus,
-#forgotSpan:focus,
-#unHideSpan:focus,
-#Stay:focus,
-#Sentry_button:focus,
-#msgOkBtn:focus {
-  outline: none;
+#Sentry_email:focus, #Sentry_password:focus, #forgotSpan:focus, #unHideSpan:focus, #Stay:focus, #Sentry_button:focus, #msgOkBtn:focus  {  
+	outline:none;  
 }
 
 #SentryTitleBar {
-  height: 48px;
-  padding-top: 12px;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-  text-align: center;
+	/* background-color: DarkSeaGreen;
+	 border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: black;
+	/* border-top-left-radius: 3px; */
+	/* border-top-right-radius: 3px; */
+	
+	/* background: rgb(129,129,129); /* Old browsers */
+	/* background: -moz-linear-gradient(top,  rgba(129,129,129,.33) 0%, rgba(54,54,53,.33) 100%); /* FF3.6+ */
+	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(129,129,129,.33)), color-stop(100%,rgba(54,54,53,.33))); /* Chrome,Safari4+ */
+	/* background: -webkit-linear-gradient(top,  rgba(129,129,129,.33) 0%,rgba(54,54,53,.33) 100%); /* Chrome10+,Safari5.1+ */
+	/* background: -o-linear-gradient(top,  rgba(129,129,129,.33) 0%,rgba(54,54,53,.33) 100%); /* Opera 11.10+ */
+	/* background: -ms-linear-gradient(top,  rgba(129,129,129,.33) 0%,rgba(54,54,53,.33) 100%); /* IE10+ */
+	/* background: linear-gradient(to bottom,  rgba(129,129,129,.33) 0%,rgba(54,54,53,.33) 100%); /* W3C */
+	/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#818181', endColorstr='#363635',GradientType=0 ); /* IE6-9 */
+	 
+	height: 48px;
+	padding-top: 12px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	
+	text-align: center;
 }
-
-#Title,
+#Title, #Welcome {
+	display: block;
+	float: left;
+	font-family: Tahoma, Geneva, Arial, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	letter-spacing: 1px;
+	line-height: normal;
+	/* text-shadow:0 -1px 0 #000000; */
+	text-transform: none;
+	text-align: center;
+	width: 360px;
+	margin-left: -30px;
+}
 #Welcome {
-  display: block;
-  float: left;
-  font-family: verdana;
-  font-size: 18px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  letter-spacing: 1px;
-  line-height: normal;
-  text-transform: none;
-  text-align: center;
-  width: 240px;
-  margin-left: -30px;
+	display: none;
 }
-
-#Welcome {
-  display: none;
-}
-
 #iconKey {
-  display: block;
-  float: left;
-  background: url(https://www.sentrylogin.com/sentry/images/icon_key.png) no-repeat;
-  background-position: center;
-  width: 60px;
-  height: 26px;
+	display: block;
+	float: left;
+	background: url(https://www.sentrylogin.com/sentry/images/icon_key.png) no-repeat;
+	background-position:center;
+	width: 60px;
+	height: 26px;
 }
-
 #psist {
-  display: block;
-  float: left;
-  margin-left: 45px;
-  margin-top: 7px;
+	display: block;
+	float: left;
+	margin-left: 45px;
+	margin-top: 7px;
 }
-
 input[type=checkbox].SentryCss-checkbox {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0;
+	border:0;
 }
-
 input[type=checkbox].SentryCss-checkbox + label.SentryCss-label {
-  padding-left: 22px;
-  height: 21px;
-  display: inline-block;
-  line-height: 21px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  vertical-align: middle;
-  cursor: pointer;
+	padding-left:22px;
+	height:21px; 
+	display:inline-block;
+	line-height:21px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+	cursor: pointer;
 }
-
 input[type=checkbox].SentryCss-checkbox:checked + label.SentryCss-label {
-  background-position: 0 -21px;
+	background-position: 0 -21px;
 }
-
-.SentryCss-label {
-  background-image: url(https://www.sentrylogin.com/sentry/images/checkRoundFlat.png);
+.SentryCss-label{ 
+	background-image: url(https://www.sentrylogin.com/sentry/images/checkRoundFlat.png);
 }
 
 .SentryLoginButton {
-  display: block;
-  float: left;
-  height: 40px;
-  width: 260px;
-  background: Gainsboro;
-  color: #848484;
-  font-size: 16px;
-  font-family: verdana;
-  font-weight: normal;
-  text-decoration: none;
-  vertical-align: middle;
-  margin-top: 20px;
-  margin-left: 20px;
-  text-align: center;
-  cursor: pointer;
-  line-height: normal;
+	display: block;
+	float: left;
+	height: 40px;
+	width: 280px;
+   
+   background: Gainsboro;
+   /* background: -webkit-gradient(linear, left top, left bottom, from(#4674ff), to(#4561ae));
+   background: -webkit-linear-gradient(top, #4674ff, #4561ae);
+   background: -moz-linear-gradient(top, #4674ff, #4561ae);
+   background: -ms-linear-gradient(top, #4674ff, #4561ae);
+   background: -o-linear-gradient(top, #4674ff, #4561ae);
+    -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px; */
+  /*  -webkit-box-shadow: rgba(0,0,0,1) 0 -1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 -1px 0;
+   box-shadow: rgba(0,0,0,1) 0 -1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 -1px 0; */
+   color: #848484;
+   font-size: 19px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   font-weight: normal;
+   text-decoration: none;
+   vertical-align: middle;
+   margin-top: 10px;
+   margin-left: 70px;
+   text-align: center;
+   
+    /* border-top: 1px solid #96d1f8;  */
+   cursor: pointer;
+   
+   line-height: normal;
 }
-
 .SentryLoginButton:link {
-  text-decoration: none;
-  color: #848484;
+   text-decoration: none;
+   color: #848484;
 }
-
 .SentryLoginButton:visited {
-  text-decoration: none;
-  color: #848484;
+   text-decoration: none;
+   color: #848484;
 }
-
 .SentryLoginButton:hover {
-  border-top-color: #848484;
-  background: #848484;
-  color: #ccc;
-  text-decoration: none;
+   border-top-color: #848484;
+   background: #848484;  
+   color: #ccc;
+   text-decoration: none;
 }
-
 .SentryLoginButton:active {
-  border-top-color: #4561AE;
-  background: MintCream;
-  text-decoration: none;
+   border-top-color: #4561AE;  
+   background: MintCream;
+   text-decoration: none;
 }
 
 #msgOkBtn {
-  margin-left: 0px;
-  margin-top: 36px;
+	margin-left: 46px;
+	margin-top: 36px;
 }
-
 #msgOkBtnText {
-  display: block;
-  margin-top: 8px;
+	display: block;
+	margin-top: 8px;
 }
-
 #lgnBtnText {
-  display: table-cell;
-  vertical-align: middle;
-  height: 40px;
-  width: 260px;
+	display: table-cell;
+	vertical-align: middle;
+	height: 40px;
+	width: 280px;
 }
-
 #SentryOverlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1100000 !important;
-  display: none;
-  background-color: rgba(208, 208, 208, 0.8);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1100000 !important;
+	display: none;
+	background-color: rgba(208,208,208,0.8);
 }
-
 .before {
-  display: none;
+	display: none;
+	
 }
-
 .after {
-  display: block;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  -webkit-animation: login .7s ease-in-out;
-  -moz-animation: login .7s ease-in-out;
-  -ms-animation: login .7s ease-in-out;
-  -o-animation: login .7s ease-in-out;
-  animation: login .7s ease-in-out;
-  z-index: 1200000 !important;
+	display: block;
+	margin: auto;
+	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  
+	-webkit-animation: login .7s ease-in-out;
+	-moz-animation: login .7s ease-in-out;
+	-ms-animation: login .7s ease-in-out;
+	-o-animation: login .7s ease-in-out;
+	animation: login .7s ease-in-out;
+	z-index: 1200000 !important;
 }
-
 
 /* BEGIN PAPER SHADOW EFFECT */
-
-.after::before,
-.after::after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 14px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width: 300px;
-  background: none;
-  -webkit-box-shadow: 0 15px 10px #333333;
-  -moz-box-shadow: 0 15px 10px #333333;
-  box-shadow: 0 15px 10px #333333;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
+.after::before, .after::after {
+	z-index: -1;
+	position: absolute;
+	  content: "";
+	  bottom: 14px;
+	  left: 10px;
+	  width: 50%;
+	  top: 80%;
+	  max-width:300px;
+	  background: none;
+	  -webkit-box-shadow: 0 15px 10px #333333;
+	  -moz-box-shadow: 0 15px 10px #333333;
+	  box-shadow: 0 15px 10px #333333;
+	  -webkit-transform: rotate(-3deg);
+	  -moz-transform: rotate(-3deg);
+	  -o-transform: rotate(-3deg);
+	  -ms-transform: rotate(-3deg);
+	  transform: rotate(-3deg);
 }
-
 .after::after {
-  -webkit-transform: rotate(3deg);
+	 -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
   -o-transform: rotate(3deg);
   -ms-transform: rotate(3deg);
@@ -567,128 +628,115 @@ input[type=checkbox].SentryCss-checkbox:checked + label.SentryCss-label {
   right: 10px;
   left: auto;
 }
-
-
 /* END PAPER SHADOW EFFECT */
 
 
 /* CSS Animations */
-
 @keyframes "login" {
-  0% {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
-  100% {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
+ 	0% {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+		opacity: 0;
+		/* margin-top: -50px; */
+ 	}
+ 	100% {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
+		opacity: 1;
+		/* margin-top: 0px;  */
+ 	}
 }
 
 @-moz-keyframes login {
-  0% {
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
-  100% {
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
+ 	0% {
+	   filter: alpha(opacity=0);
+	   opacity: 0;
+	   /* margin-top: -50px; */
+ 	}
+ 	100% {
+	   filter: alpha(opacity=100);
+	   opacity: 1;
+	   /*  margin-top: 0px; */
+ 	}
 }
 
 @-webkit-keyframes "login" {
-  0% {
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
-  100% {
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
+ 	0% {
+	   filter: alpha(opacity=0);
+	   opacity: 0;
+	   /* margin-top: -50px; */
+ 	}
+ 	100% {
+	   filter: alpha(opacity=100);
+	   opacity: 1;
+	    /* margin-top: 0px; */
+ 	}
 }
 
 @-ms-keyframes "login" {
-  0% {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
-  100% {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
+ 	0% {
+	   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	   filter: alpha(opacity=0);
+	   opacity: 0;
+	   /* margin-top: -50px;  */
+ 	}
+ 	100% {
+	   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	   filter: alpha(opacity=100);
+	   opacity: 1;
+	   /* margin-top: 0px;  */
+ 	}
 }
 
 @-o-keyframes "login" {
-  0% {
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
-  100% {
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
+ 	0% {
+	   filter: alpha(opacity=0);
+	   opacity: 0;
+	   /* margin-top: -50px;   */
+ 	}
+ 	100% {
+	   filter: alpha(opacity=100);
+	   opacity: 1;
+	   /*  margin-top: 0px; */
+ 	}
 }
-
-
 /* BEGIN WOBBLER */
-
-#wobbler {
-  display: block;
-  margin: 32px auto;
-  height: 36px;
-  width: 36px;
-  -webkit-animation: rotation .5s infinite linear;
-  -moz-animation: rotation .5s infinite linear;
-  -o-animation: rotation .5s infinite linear;
-  animation: rotation .5s infinite linear;
-  border-left: 2px solid LightGray;
-  border-right: 2px solid LightGray;
-  border-bottom: 4px solid LightGray;
-  border-top: 1px solid LightGray;
-  border-radius: 100%;
-  margin-top: 70px;
-  display: none;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-  }
-}
-
-@-moz-keyframes rotation {
-  from {
-    -moz-transform: rotate(0deg);
-  }
-  to {
-    -moz-transform: rotate(359deg);
-  }
-}
-
-@-o-keyframes rotation {
-  from {
-    -o-transform: rotate(0deg);
-  }
-  to {
-    -o-transform: rotate(359deg);
-  }
-}
-
-
+	#wobbler {
+		display: block;
+		margin: 32px auto;
+		
+		/* was: height:30px;
+		width:30px;  */
+		
+		height:36px;
+		width:36px;
+		-webkit-animation: rotation .5s infinite linear;
+		-moz-animation: rotation .5s infinite linear;
+		-o-animation: rotation .5s infinite linear;
+		animation: rotation .5s infinite linear;
+		border-left:2px solid LightGray;
+		border-right:2px solid LightGray;
+		border-bottom:4px solid LightGray;
+		/* was: border-top:8px solid rgba(33,128,192,1);   */
+		border-top:1px solid LightGray;
+		border-radius:100%;
+		margin-top: 70px;
+		display: none;
+	}
+	@keyframes rotation {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(359deg);}
+	}
+	@-webkit-keyframes rotation {
+		from {-webkit-transform: rotate(0deg);}
+		to {-webkit-transform: rotate(359deg);}
+	}
+	@-moz-keyframes rotation {
+		from {-moz-transform: rotate(0deg);}
+		to {-moz-transform: rotate(359deg);}
+	}
+	@-o-keyframes rotation {
+		from {-o-transform: rotate(0deg);}
+		to {-o-transform: rotate(359deg);}
+	}
 /* END WOBBLER */
