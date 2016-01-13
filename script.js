@@ -47,6 +47,7 @@ function isMobileDevice() {
 }
 
 function initializeSentry() {
+  window.alert(this.frameElement.attributes.id);
   //initialize Sentry Login aspects
 
   goMobile = isMobileDevice();
