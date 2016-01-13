@@ -47,18 +47,7 @@ function isMobileDevice() {
 }
 
 function initializeSentry() {
-  
-  
-  var frame = window.frameElement;  // Get the <iframe> element of the window
-
-if (frame) {   // If the window is in an <iframe>, change its source
-    window.alert(frame.name);
-}
-  
-  
-  
   //initialize Sentry Login aspects
-
   goMobile = isMobileDevice();
 
   // for testing, emulate mobile
@@ -524,6 +513,16 @@ function Sentry_onClick(theID) {
       break;
     case "Sentry_button":
       // submit the form
+      
+      var frame = window.frameElement;  // Get the <iframe> element of the window
+
+if (frame) {   // If the window is in an <iframe>, change its source
+    window.alert(frame.name);
+}
+  
+      
+      
+      
       sentryLogin();
       break;
     case "msgOkBtn":
