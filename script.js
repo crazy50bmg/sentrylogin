@@ -47,12 +47,15 @@ function isMobileDevice() {
 }
 
 function initializeSentry() {
-  var iframes=parent.document.getElementsByTagName('iframe'), ifr, i=0, id=null;
-  while(ifr=iframes[i++]){
-  if(ifr.contentWindow==this){id=ifr.id;break}
-  }
-    window.alert(id);
-  }
+  
+  
+  var frame = window.frameElement;  // Get the <iframe> element of the window
+
+if (frame) {   // If the window is in an <iframe>, change its source
+    window.alert(frame.name);
+}
+  
+  
   
   //initialize Sentry Login aspects
 
