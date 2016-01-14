@@ -557,7 +557,7 @@ input[type=checkbox].SentryCss-checkbox:checked + label.SentryCss-label {
    text-decoration: none;
 }
 
-#SentryTrigger:hover {
+span#SentryTrigger:hover {
    color: #000000;
 }
 
