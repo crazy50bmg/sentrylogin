@@ -7,6 +7,10 @@ clear:both;
 	cursor:hand;
 }
 
+.highlight:hover {
+	color: #A6AA72;
+}
+
 #forgotSpan {
 	color: White;
 	display: block;
