@@ -573,8 +573,7 @@ input[type=checkbox].SentryCss-checkbox:checked + label.SentryCss-label {
 }
 #SentryOverlay {
 	position: fixed;
-	/* top: 0; */
-	height: 290px;
+	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
