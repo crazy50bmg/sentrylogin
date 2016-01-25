@@ -856,7 +856,7 @@ function SentryPopUp(state) {
 
     document.getElementById("forgotSpan").style.fontSize = "13px";
 
-    document.getElementById("unHideSpan").style.marginLeft = "47px";
+    document.getElementById("unHideSpan").style.marginLeft = "37px";
 
     document.getElementById("unHideSpan").style.fontSize = "13px";
 
