@@ -852,11 +852,11 @@ function SentryPopUp(state) {
 
     document.getElementById("forgotSpan").style.marginLeft = "6px";
 
-    document.getElementById("forgotSpan").style.width = "35px";
+    document.getElementById("forgotSpan").style.width = "40px";
 
     document.getElementById("forgotSpan").style.fontSize = "13px";
 
-    document.getElementById("unHideSpan").style.marginLeft = "20px";
+    document.getElementById("unHideSpan").style.marginLeft = "30px";
 
     document.getElementById("unHideSpan").style.fontSize = "13px";
 
